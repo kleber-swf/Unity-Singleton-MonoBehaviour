@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 
-namespace DoD.Lib.Core {
-	[AttributeUsage(AttributeTargets.Class, Inherited = true)]
+namespace com.kleberswf.lib.core {
+	[AttributeUsage(AttributeTargets.Class)]
 	public class PrefabAttribute : Attribute {
 		public readonly string Name;
 		public PrefabAttribute(string name) { Name = name; }
