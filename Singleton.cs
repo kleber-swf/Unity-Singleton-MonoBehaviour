@@ -7,7 +7,7 @@ namespace com.kleberswf.lib.core {
 
 		public static T Instance {
 			get {
-				if (_instance == null) CreateInstance();
+				if (!Instantiated) CreateInstance();
 				return _instance;
 			}
 		}
